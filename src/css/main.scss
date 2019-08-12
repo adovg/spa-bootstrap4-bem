@@ -1,0 +1,37 @@
+@import './font.scss';
+@import './mixins.scss';
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background: #fafafa;
+}
+
+ul, li {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+.menu__logo {
+	height: 24px;
+	width: 124px;
+	font-family: OpenSans-Bold;
+	font-size: 25px;
+	color: #000;
+}
+
+.menu-bar {
+	padding: 20px 0;
+}
+
+.menu__item {
+	text-decoration: none;
+	font-family: 'OpenSans-Semibold';
+	margin-left: 37px;
+		a {
+			color: black;
+				&:hover {
+					color: grey;
+				}
+		}
+}
