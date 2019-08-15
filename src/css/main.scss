@@ -5,6 +5,7 @@ body {
 	padding: 0;
 	box-sizing: border-box;
 	background: #fafafa;
+	font-family: "Open Sans", italic;
 }
 
 ul, li {
@@ -30,6 +31,7 @@ ul, li {
 	margin-left: 37px;
 		a {
 			color: black;
+			font-family: "OpenSans-Semibold";
 				&:hover {
 					color: grey;
 				}
@@ -46,24 +48,45 @@ ul, li {
 	  	background-position: 0 30%;
 			background: rgba(0, 0, 0, .65) url(../img/header-image.png);
 			background-blend-mode: darken;
-			// background-image: rgba(0, 0, 0, .65) url(../img/header-image.png);
-
+				.header__title {
+					font-size: 55px;
+				}
+				.header__text {
+					font-size: 20px;
+					margin-bottom: 100px;
+				}
 		}
 }
 
-.header__title {
-	font-size: 55px;
-		.header__text {
-			font-size: 20px;
-			margin-bottom: 100px;
-		}
-}
+// .header__title {
+// 	font-size: 55px;
+// 		.header__text {
+// 			font-size: 20px;
+// 			margin-bottom: 100px;
+// 		}
+// }
 
 .button {
 	padding: 10px 25px;
 	margin: 0 10px;
 	color: white;
 	transition: 0.3s;
+	// 	.button_empty {
+	// 		background: transparent;
+	// 		border: 2px solid white;
+	// 			&:hover {
+	// 				border: 2px dotted white;
+	// 				background: #04574e;
+	// 			}
+	// }
+	// 	.button_full {
+	// 		background: #00897b;
+	// 		border: 2px solid white;
+	// 			&:hover {
+	// 				border: 2px dotted white;
+	// 				background: #04574e;
+	// 			}
+	// }
 }
 
 .button_empty {
@@ -81,5 +104,47 @@ ul, li {
 		&:hover {
 			border: 2px dotted white;
 			background: #04574e;
+		}
+}
+
+////////about us
+
+.about {
+	color: black;
+	background: #ffffff;
+	text-align: center;
+	padding-top: 120px;
+	padding-bottom: 125px;
+		.about__title {
+			font-size: 30px;
+			font-weight: bold;
+		}
+		.about__text {
+			font-size: 15px;
+			margin-bottom: 110px;
+			color: #212121
+			}
+		.about__h3 {
+			font-family: "OpenSans-Semibold";
+			}
+		img {
+			margin-top: 30px;
+			margin-bottom: 20px;
+		}
+}
+
+///Services
+
+.services {
+	color: black;
+	background: #e4fdf9;
+	text-align: center;
+	padding-top: 165px;
+	padding-bottom: 125px;
+	display: flex;
+	justify-content: center;
+		.row {
+			text-align: center;
+			justify-content: center;
 		}
 }
