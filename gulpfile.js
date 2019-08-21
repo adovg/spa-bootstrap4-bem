@@ -9,7 +9,7 @@ const cleanCSS = require('gulp-clean-css');
 // const rename = require("gulp-rename");
 const uglify = require('gulp-uglify-es').default;
 const del = require('del');
-const browserSync = require('browser-sync').create(); 
+const browserSync = require('browser-sync').create();
 const sourcemaps = require('gulp-sourcemaps');
 const sass = require('gulp-sass');
 const imagemin = require('gulp-imagemin');
@@ -73,7 +73,7 @@ function scripts() {
 // 	.pipe(imagemin({
 // 		progressive: true
 // 	}))
-// 	.pipe(gulp.dest('./build/img/'))	
+// 	.pipe(gulp.dest('./build/img/'))
 // });
 
 function img() {
@@ -83,7 +83,7 @@ function img() {
 	}))
 	.pipe(gulp.dest('./build/img/'))
 }
-//Task to watch 
+//Task to watch
 function watch() {
 	browserSync.init({
         server: {
@@ -91,9 +91,9 @@ function watch() {
         }
     });
     //watch SCSS
-gulp.watch('./src/css/**/*.scss', styles);  
+gulp.watch('./src/css/**/*.scss', styles);
 	//watch JS
-gulp.watch('./src/js/**/*.js', styles);    
+gulp.watch('./src/js/**/*.js', scripts);    
 	//wathc HTML
 gulp.watch('./*.html').on('change', browserSync.reload);
 //watch IMG

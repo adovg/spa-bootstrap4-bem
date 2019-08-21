@@ -1,0 +1,1 @@
+let myUix=document.getElementById("uix");myUix.onclick=function(){for(var e=document.getElementsByClassName("col123"),l=0;l<e.length;l++)e[l].style.display="none"!=e[l].style.display?"none":"block"};
