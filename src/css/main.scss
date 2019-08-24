@@ -1,5 +1,6 @@
 @import './font.scss';
 @import './mixins.scss';
+
 body {
 	margin: 0;
 	padding: 0;
@@ -8,11 +9,13 @@ body {
 	font-family: "Open Sans", italic;
 }
 
-ul, li {
+ul,
+li {
 	display: block;
 	margin: 0;
 	padding: 0;
 }
+
 .menu__logo {
 	height: 24px;
 	width: 124px;
@@ -29,40 +32,45 @@ ul, li {
 	text-decoration: none;
 	font-family: 'OpenSans-Semibold';
 	margin-left: 37px;
-		a {
-			color: black;
-			font-family: "OpenSans-Semibold";
-				&:hover {
-					color: grey;
-				}
+
+	a {
+		color: black;
+		font-family: "OpenSans-Semibold";
+
+		&:hover {
+			color: grey;
 		}
+	}
 }
 
 //////header
 .header {
-	 color: white;
-	 text-align: center;
-	 padding: 180px 0;
-	 background-size: cover;
-	 background-position: 0 30%;
-	 background: rgba(0, 0, 0, .65) url(../img/header-image.png);
-	 background-blend-mode: darken;
-	 width: 100%;
-		.container {
-			// text-align: center;
-			// padding: 180px 0;
-			// background-size: cover;
-	  	// background-position: 0 30%;
-			// background: rgba(0, 0, 0, .65) url(../img/header-image.png);
-			// background-blend-mode: darken;
-				.header__title {
-					font-size: 55px;
-				}
-				.header__text {
-					font-size: 20px;
-					margin-bottom: 100px;
-				}
+	color: white;
+	text-align: center;
+	padding: 180px 0;
+	background-size: cover;
+	background-position: 0 30%;
+	background: rgba(0, 0, 0, .65) url(../img/header-image.png);
+	background-blend-mode: darken;
+	width: 100%;
+
+	.container {
+
+		// text-align: center;
+		// padding: 180px 0;
+		// background-size: cover;
+		// background-position: 0 30%;
+		// background: rgba(0, 0, 0, .65) url(../img/header-image.png);
+		// background-blend-mode: darken;
+		.header__title {
+			font-size: 55px;
 		}
+
+		.header__text {
+			font-size: 20px;
+			margin-bottom: 100px;
+		}
+	}
 }
 
 
@@ -75,12 +83,14 @@ ul, li {
 	cursor: pointer;
 	text-transform: uppercase;
 	border: 2px solid white;
-		&:hover {
-			// background: transparent;
 
-			border: 2px dotted white;
-			background: #04574e;
-		}
+	&:hover {
+		// background: transparent;
+
+		border: 2px dotted white;
+		background: #04574e;
+	}
+
 	// 	.button_empty {
 	// 		background: transparent;
 	// 		border: 2px solid white;
@@ -99,23 +109,23 @@ ul, li {
 	// }
 }
 
-.button_empty {
-	// background: transparent;
-	// border: 2px solid white;
-	// border: 2px dotted white;
-	// background: #04574e;
-		&:hover {
+// .button_empty {
 
-		}
-}
+// 	// background: transparent;
+// 	// border: 2px solid white;
+// 	// border: 2px dotted white;
+// 	// background: #04574e;
+// 	&:hover {}
+// }
 
 .button_full {
 	background: #00897b;
 	border: 2px solid white;
-		&:hover {
-			border: 2px dotted white;
-			background: #04574e;
-		}
+
+	&:hover {
+		border: 2px dotted white;
+		background: #04574e;
+	}
 }
 
 ////////about us
@@ -126,22 +136,26 @@ ul, li {
 	text-align: center;
 	padding-top: 120px;
 	padding-bottom: 125px;
-		.about__title {
-			font-size: 30px;
-			font-weight: bold;
-		}
-		.about__text {
-			font-size: 15px;
-			margin-bottom: 110px;
-			color: #212121
-			}
-		.about__h3 {
-			font-family: "OpenSans-Semibold";
-			}
-		img {
-			margin-top: 30px;
-			margin-bottom: 20px;
-		}
+
+	.about__title {
+		font-size: 30px;
+		font-weight: bold;
+	}
+
+	.about__text {
+		font-size: 15px;
+		margin-bottom: 110px;
+		color: #212121
+	}
+
+	.about__h3 {
+		font-family: "OpenSans-Semibold";
+	}
+
+	img {
+		margin-top: 30px;
+		margin-bottom: 20px;
+	}
 }
 
 ///Services
@@ -154,37 +168,40 @@ ul, li {
 	padding-bottom: 125px;
 	display: flex;
 	justify-content: center;
-		.row {
-			text-align: center;
-			justify-content: center;
-		}
+
+	.row {
+		text-align: center;
+		justify-content: center;
+	}
 }
 
 .our_card {
 	background: #ffffff;
 	padding: 50px 25px 40px 25px;
 	margin-bottom: 30px;
+
 	// max-width: 430px;
-		&:hover  {
-			background: #00897B;
+	&:hover {
+		background: #00897B;
+		transition: 0.5s;
+		box-shadow: 0px 10px 12px -3px rgba(0, 0, 0, 0.26);
+		color: #ffffff;
+
+		&:hover .button-services {
+			color: white;
+			border: 2px solid white;
 			transition: 0.5s;
-			box-shadow: 0px 10px 12px -3px rgba(0, 0, 0, 0.26);
-			color: #ffffff;
-			&:hover .button-services {
-				color: white;
-				border: 2px solid white;
-				transition: 0.5s;
-				cursor: pointer;
-			}
+			cursor: pointer;
+		}
 	}
 
 	.button-services {
-			text-transform: uppercase;
-			border: 2px solid black;
-			background: transparent;
-			padding: 14px 12px 18px;
-			font-family: 'OpenSans-Semibold';
-		}
+		text-transform: uppercase;
+		border: 2px solid black;
+		background: transparent;
+		padding: 14px 12px 18px;
+		font-family: 'OpenSans-Semibold';
+	}
 }
 
 //Портфолио
@@ -199,11 +216,12 @@ ul, li {
 	background: #00897b;
 	margin-bottom: 118px;
 	margin-top: 112px;
-		&:hover {
-			background: white;
-			color: #000;
-			border: 2px solid #00897b;
-		}
+
+	&:hover {
+		background: white;
+		color: #000;
+		border: 2px solid #00897b;
+	}
 }
 
 .portfolio__img {
@@ -217,13 +235,15 @@ ul, li {
 	padding-top: 165px;
 	padding-bottom: 125px;
 	background: #f0f1f1;
-		.pricelist {
-			background: #ffffff;
-				&:hover {
-					transition: 0.5s;
-					box-shadow: 0px 0px 11px 3px rgba(0, 0, 0, 0.39);
-				}
-			}
+
+	.pricelist {
+		background: #ffffff;
+
+		&:hover {
+			transition: 0.5s;
+			box-shadow: 0px 0px 11px 3px rgba(0, 0, 0, 0.39);
+		}
+	}
 }
 
 .pricelist__head {
@@ -231,29 +251,33 @@ ul, li {
 	background-size: cover;
 	background-repeat: no-repeat;
 	padding: 40px 0 65px 0;
-  color: white;
+	color: white;
 	max-height: 211px;
-		p {
-			font-size: 25px;
-		}
-		sub {
-			font-size: 17px;
-		}
-		sub {
-			font-size: 25px;
-		}
+
+	p {
+		font-size: 25px;
+	}
+
+	sub {
+		font-size: 17px;
+	}
+
+	sub {
+		font-size: 25px;
+	}
 }
 
 .pricelist__body {
 	font-size: 17px;
 	color: #212121;
 	background: #ffffff;
-		li {
-			border-bottom: 1px solid #bfbfbf;
-			max-width: 174px;
-			margin: 0px auto;
-			padding: 28px 0 12px 0;
-		}
+
+	li {
+		border-bottom: 1px solid #bfbfbf;
+		max-width: 174px;
+		margin: 0px auto;
+		padding: 28px 0 12px 0;
+	}
 }
 
 .pricelist__btn {
@@ -262,11 +286,70 @@ ul, li {
 	padding: 20px 30px;
 	cursor: pointer;
 	margin: 66px;
-		&:hover {
-			text-transform: uppercase;
-			border: none;
-			background: #00897b;
-			transition: 0.5s;
-			// box-shadow: 0px 0px 11px 3px rgba(0, 0, 0, 0.39);
+
+	&:hover {
+		text-transform: uppercase;
+		border: none;
+		background: #00897b;
+		transition: 0.5s;
+		// box-shadow: 0px 0px 11px 3px rgba(0, 0, 0, 0.39);
+	}
+}
+
+.team {
+	color: black;
+	background: #ffffff;
+	text-align: center;
+	padding-top: 165px;
+	padding-bottom: 125px;
+	// background: #f0f1f1;
+	// display: flex;
+		h4 {
+			font-size: 20px;
+			font-family: 'Open Sans Semibold';
+			margin-top: 30px;
+			margin-bottom: 30px;
 		}
+		p {
+			font-size: 15px;
+		}
+		
+}
+
+.team__card {
+	min-width: 300px;
+}
+
+// .team__icons {
+// 	display: flex;
+//     justify-content: center;
+// 		i:nth-child(1) {
+// 			color: #f0f1f1;
+// 		}
+// 		i:nth-child(2) {
+// 			color: #00897b;
+// 		}
+// 		 i:nth-child(1) :hover {
+// 			background: #000;
+// 		}
+// }
+
+.team__icons {
+	display: flex;
+    justify-content: center;
+		i:nth-child(1) {
+			color: #f0f1f1;
+				// &:hover {
+				// 	background: #000;
+				// }
+		}
+		i:nth-child(2) {
+			color: #00897b;
+				&:hover {
+					background: #3949ab;
+					border-radius: 25%;
+					transition: 0.3s;
+				}
+		}
+		
 }

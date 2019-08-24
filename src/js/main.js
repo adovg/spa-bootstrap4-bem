@@ -52,3 +52,14 @@ myUix.onclick = function() {
 // function showhide(d) {
 //   d.style.display = (d.style.display !== 'none') ? 'none' : 'block';
 // }
+
+
+
+///////////////////////////////////////////////////////////////////////////////////slick-slider
+
+
+$('.multiple-items').slick({
+     infinite: true,
+     slidesToShow: 3,
+     slidesToScroll: 3
+   });
