@@ -185,3 +185,4 @@ prew.onclick = function () {
 } 
 
 ////////////////end of slider
+
