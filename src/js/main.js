@@ -37,7 +37,7 @@
   //  setTimeout("clock()", 1000);
 //   };
 
-/////////////////////////////////////////////////// scroll Up
+/////////////////////////////////////////////////// scroll Up and hide
 let scrollUp = document.getElementById('toTop');
 scrollUp.onclick = () => {
   document.getElementById('home').scrollIntoView({block: "center", behavior: "smooth"});  
@@ -53,7 +53,33 @@ window.onscroll = () => {
       scrollUp.style.display = 'none'; 
     }
 }
-/////////////////////////////////////////////////// scroll Up
+/////////////////////////////////////////////////// scroll Up and hide
+
+let mobileMenu = document.getElementById('menu-icon');
+
+
+mobileMenu.onclick = () => {
+  //alert('!231');
+  let myNavMenu = document.querySelector('nav');
+      myNavMenu.style.display = 'flex';
+   let navMenu = document.querySelector('.menu');
+      navMenu.classList.add('menu-mobile');
+
+      if ( navMenu.classList.contains('menu-mobile') == true) {
+       // alert('opend')
+        myNavMenu.style.display = 'none';
+      }
+     //nav.classList.add('menu-test')
+};
+
+mobileMenuHide.onclick = () => {
+  //alert('!231');
+  let myNavMenu = document.querySelector('nav');
+      myNavMenu.style.display = 'none';
+  //  let navMenu = document.querySelector('.menu');
+  //     navMenu.classList.add('menu-mobile');
+     //nav.classList.add('menu-test')
+};
 
 /////////////////////Plate script
 

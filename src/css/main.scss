@@ -22,6 +22,7 @@ li {
 	font-family: OpenSans-Bold;
 	font-size: 25px;
 	color: #000;
+	margin-bottom: 30px;
 }
 
 .menu-bar {
@@ -32,6 +33,7 @@ li {
 	text-decoration: none;
 	font-family: 'OpenSans-Semibold';
 	margin-left: 37px;
+	flex-direction: column;
 
 	a {
 		color: black;
@@ -549,7 +551,29 @@ li {
 	display: flex;
 	color: #000;
 }
- @import '__slider.scss'
+
+#menu-icon {
+	display: none;
+}
+
+.menu-test {
+	display: flex;
+}
+
+.menu-mobile {
+	color: red;
+	display: flex;
+	flex-direction: column;
+	font-style: italic;
+	font-size: 40px;
+	text-align: center;
+	align-content: center;
+	margin: 0px auto;
+		li:hover {
+			border: 1px solid #000;
+		}
+}
+ @import 'media.scss'
 
 
 
