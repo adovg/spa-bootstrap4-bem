@@ -36,9 +36,13 @@ li {
 	a {
 		color: black;
 		font-family: "OpenSans-Semibold";
+		text-decoration: none;
 
 		&:hover {
 			color: grey;
+		}
+		&:target {
+			color: red;
 		}
 	}
 }
@@ -90,6 +94,7 @@ li {
 		border: 2px dotted white;
 		background: #04574e;
 	}
+	
 
 	// 	.button_empty {
 	// 		background: transparent;
@@ -222,6 +227,11 @@ li {
 		color: #000;
 		border: 2px solid #00897b;
 	}
+	@media screen and (max-device-width: 768px) {
+		margin-bottom: 18px;
+		margin-top: 12px;
+	}
+	
 }
 
 .portfolio__img {
@@ -366,6 +376,8 @@ li {
 .blog__img {
 	max-width: 100%;
 	// max-width: 550px;
+	margin-bottom: 5px;
+	object-fit: cover;
 }
 
 .left > div:first-child {
@@ -386,7 +398,7 @@ li {
 
 .blog-item {
     text-align: left;
-    margin: 60px 0 0 20px;
+    margin: 60px 0 10px 20px;
 		a {
 			color: #00897B;
 			margin-top: 30px;
@@ -412,4 +424,132 @@ li {
 		margin-top: 20px;
 	}
 }
+
+
+///////////////////////////footer 
+.footer {
+	padding: 165px 0 125px 0;
+	color: #fff;
+	text-align: center;
+	background-image: url('../img/footer.png'); 
+	background-size: cover;
+	background-repeat: no-repeat;
+		.about__text {
+			color: #fff;
+		}
+}
+
+.fa-map-marker-alt, .fa-phone, .fa-envelope {
+	font-size: 62px;
+	color: #fff;
+	background: #3949ab;
+	padding: 30px;
+	border-radius: 50%;
+	// margin: 20px 30px 35px 30px;
+	margin: 20px auto;
+}
+
+.contacts {
+	display: flex;
+	justify-content: space-between;
+		p {
+			font-size: 20px;
+			margin-bottom: 30px;
+		}
+}
+
+.footer {
+	// display: flex;
+	// flex-direction: column;
+	//margin: 20px;
+	//justify-content: space-around;
+		input {
+			padding: 30px;
+   			width: 100%;
+   			border-radius: 10px;
+   			border: none;
+		}
+		textarea {
+			margin-top: 30px;
+			margin-bottom: 30px;
+			padding: 30px;
+			width: 100%;
+			border-radius: 10px;
+			border: none;
+			resize: none;
+		}
+		button {
+			font-size: 20px;
+			font-family: 'Roboto', sans-serif;
+			text-transform: uppercase;
+			color: #212121;
+			padding: 20px 80px;
+			border-radius: 10px;
+			border: none;
+			transition: 0.3s;
+				&:hover {
+					opacity: 0.6;
+					background-color: #00897B;
+				 }
+		 }
+		 
+}
+
+
+.footer input:focus,
+.footer textarea:focus {
+   outline: none;
+}
+
+
+
+// .footer button {
+//    font-size: 20px;
+//    font-family: 'Roboto', sans-serif;
+//    text-transform: uppercase;
+//    color: #212121;
+//    padding: 20px 80px;
+//    border-radius: 10px;
+//    border: none;
+//    transition: 0.3s
+// }
+
+.rules {
+	margin: 20px;
+	text-align: center;
+	font-weight: 600;
+}
+
+.gallery-items {
+	//margin: 0px auto;
+	display: flex;
+	
+}
+
+.myGallery {
+	justify-content: space-around;
+	align-content: center;
+	//margin: 0px auto;
+}
+
+#toTop {
+	z-index: 999;
+	width: 40px;
+	height: 40px;
+	border: none;
+	font-size: 20px;
+	border-radius: 3px;
+	//background: #00897b;
+	text-align: center;
+	padding: 5px;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	cursor: pointer;
+	display: flex;
+	color: #000;
+}
  @import '__slider.scss'
+
+
+
