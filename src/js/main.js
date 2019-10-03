@@ -55,31 +55,6 @@ window.onscroll = () => {
 }
 /////////////////////////////////////////////////// scroll Up and hide
 
-let mobileMenu = document.getElementById('menu-icon');
-
-
-mobileMenu.onclick = () => {
-  //alert('!231');
-  let myNavMenu = document.querySelector('nav');
-      myNavMenu.style.display = 'flex';
-   let navMenu = document.querySelector('.menu');
-      navMenu.classList.add('menu-mobile');
-
-      if ( navMenu.classList.contains('menu-mobile') == true) {
-       // alert('opend')
-        myNavMenu.style.display = 'none';
-      }
-     //nav.classList.add('menu-test')
-};
-
-mobileMenuHide.onclick = () => {
-  //alert('!231');
-  let myNavMenu = document.querySelector('nav');
-      myNavMenu.style.display = 'none';
-  //  let navMenu = document.querySelector('.menu');
-  //     navMenu.classList.add('menu-mobile');
-     //nav.classList.add('menu-test')
-};
 
 /////////////////////Plate script
 
@@ -169,6 +144,47 @@ let toContact = () => {
 }
 
 // //////// Parse Date in blog
+
+let mobileMenu = document.getElementById('menu-icon');
+
+
+mobileMenu.onclick = () => {
+  //alert('!231');
+  let myNavMenu = document.querySelector('nav');
+      myNavMenu.style.display = 'flex';
+   let navMenu = document.querySelector('.menu');
+      navMenu.classList.add('menu-mobile');
+
+    //   if ( navMenu.classList.contains('menu-mobile') == true) {
+    //     alert('opend')
+    //     myNavMenu.style.display = 'none';
+    //   }
+    //  //nav.classList.add('menu-test')
+
+    let mobileMenuClosed = () => {
+      if ( navMenu.classList.contains('menu-mobile') == true) {
+        //alert('opend')
+        myNavMenu.style.display = 'none';
+      }
+     //nav.classList.add('menu-test')
+    }
+    setTimeout(mobileMenuClosed, 10000);
+};
+
+// mobileMenuHide.onclick = () => {
+//   //alert('!231');
+//   let myNavMenu = document.querySelector('nav');
+//       myNavMenu.style.display = 'none';
+//   //  let navMenu = document.querySelector('.menu');
+//   //     navMenu.classList.add('menu-mobile');
+//      //nav.classList.add('menu-test')
+// };
+
+
+
+
+
+
 
 let months = ['January','February','March','April','May','June','July',
 'August','September','October','November','December'];       
