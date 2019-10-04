@@ -556,13 +556,13 @@ li {
 	display: none;
 }
 
-.menu-test {
-	display: flex;
-}
+// .menu-test {
+// 	display: flex;
+// }
 
 .menu-mobile {
-	// color: red;
-	display: flex;
+	//display: flex;
+	display: none;
 	flex-direction: column;
 	font-style: italic;
 	font-size: 40px;

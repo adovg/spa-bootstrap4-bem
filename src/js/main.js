@@ -148,28 +148,69 @@ let toContact = () => {
 let mobileMenu = document.getElementById('menu-icon');
 
 
+// mobileMenu.onclick = () => {
+//   //alert('!231');
+//   let myNavMenu = document.querySelector('nav');
+//       myNavMenu.style.display = 'flex';
+//    let navMenu = document.querySelector('.menu');
+//       navMenu.classList.add('menu-mobile');
+
+//     //   if ( navMenu.classList.contains('menu-mobile') == true) {
+//     //     alert('opend')
+//     //     myNavMenu.style.display = 'none';
+//     //   }
+//     //  //nav.classList.add('menu-test')
+
+//     let mobileMenuClosed = () => {
+//       if ( navMenu.classList.contains('menu-mobile') == true) {
+//         //alert('opend')
+//         myNavMenu.style.display = 'none';
+//       }
+//      //nav.classList.add('menu-test')
+//     }
+//     setTimeout(mobileMenuClosed, 10000);
+// };
+
+
+
 mobileMenu.onclick = () => {
-  //alert('!231');
-  let myNavMenu = document.querySelector('nav');
-      myNavMenu.style.display = 'flex';
-   let navMenu = document.querySelector('.menu');
-      navMenu.classList.add('menu-mobile');
-
-    //   if ( navMenu.classList.contains('menu-mobile') == true) {
-    //     alert('opend')
-    //     myNavMenu.style.display = 'none';
-    //   }
-    //  //nav.classList.add('menu-test')
-
-    let mobileMenuClosed = () => {
-      if ( navMenu.classList.contains('menu-mobile') == true) {
-        //alert('opend')
-        myNavMenu.style.display = 'none';
+  let mobileMenuHide = document.getElementById('nav');
+    //alert('!');
+     // mobileMenuHide.style.display = 'flex';
+      //mobileMenuHide.style.display = (mobileMenuHide.style.display == 'flex') ? 'flex' : 'none'
+      if (mobileMenuHide.style.display == 'none') {
+        mobileMenuHide.style.display = 'flex'
+      } else {
+        mobileMenuHide.style.display = 'none';
       }
-     //nav.classList.add('menu-test')
-    }
-    setTimeout(mobileMenuClosed, 10000);
+
 };
+
+let search = document.getElementById('search');
+    
+search.onclick = () => {
+    
+  
+    alert('search');
+    let parseBox = document.getElementById('parseBox');
+        parseBox.innerHTML = '<input type="text">';
+  
+
+  }
+
+  let searchM = document.getElementById('searchM');
+    
+searchM.onclick = () => {
+    
+  
+    alert('search');
+    let parseBoxM = document.getElementById('parseBoxM');
+        parseBoxM.innerHTML = '<input type="text">';
+  
+
+  }
+
+
 
 // mobileMenuHide.onclick = () => {
 //   //alert('!231');
