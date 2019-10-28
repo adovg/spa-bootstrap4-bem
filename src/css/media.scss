@@ -1,3 +1,21 @@
+@media screen and (max-width: 1076px) {
+    .left > div:first-child {
+        order: 1;
+    }
+    
+    .left > div:last-child {
+        order: 1;
+    }
+    
+    .right > div:first-child {
+        order: 1;
+    }
+    
+    .right > div:last-child {
+        order: 1;
+    }
+}
+
 @media screen and (max-width: 768px) {
     nav {
         display: none;
@@ -20,13 +38,75 @@
         margin: 0px auto 10px auto;
     }
     
+    .left > div:first-child {
+        order: 1;
+    }
+    
+    .left > div:last-child {
+        order: 1;
+    }
+    
+    .right > div:first-child {
+        order: 1;
+    }
+    
+    .right > div:last-child {
+        order: 1;
+    }
 }
 
 
 
-//  @media screen and (min-width: 478px) { 
-//     .menu-mobile {
-//         display: none;
-//         color: red;
-//     }
-//  }
+ @media screen and (max-width: 478px) { 
+    .header {
+        padding: 20px;
+            button {
+                margin-bottom: 10px;
+        }
+    }
+
+    .header__title {
+        font-size: 45px;
+    }
+
+    .header__text {
+        margin-bottom: 20px;
+    }
+
+
+    .about {
+        padding: 20px;
+    }
+
+    .about__text {
+        margin-bottom: 20px;
+    }
+
+    .sevices {
+        padding: 20px;
+    }
+
+    .portfolio {
+        padding: 20px;
+    }
+
+    .pricing {
+        padding: 20px;
+    }
+
+    .left > div:first-child {
+        order: 1;
+    }
+    
+    .left > div:last-child {
+        order: 1;
+    }
+    
+    .right > div:first-child {
+        order: 1;
+    }
+    
+    .right > div:last-child {
+        order: 1;
+    }
+ }

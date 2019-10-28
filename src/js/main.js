@@ -9,34 +9,6 @@
 
 
 
-
-
-// function clock() {
-  // var d = new Date();
-  // var month_num = d.getMonth()
-  // var day = d.getDate();
-  // var hours = d.getHours();
-  // var minutes = d.getMinutes();
-  // var seconds = d.getSeconds();
-   
-  // month=new Array("января", "февраля", "марта", "апреля", "мая", "июня",
-  // "июля", "августа", "сентября", "октября", "ноября", "декабря");
-   
-  // if (day <= 9) day = "0" + day;
-  // if (hours <= 9) hours = "0" + hours;
-  // if (minutes <= 9) minutes = "0" + minutes;
-  // if (seconds <= 9) seconds = "0" + seconds;
-   
-  // date_time = "Сегодня - " + day + " " + month[month_num] + " " + d.getFullYear() +
-  // " г.&nbsp;&nbsp;&nbsp;Текущее время - "+ hours + ":" + minutes + ":" + seconds;
-  // if (document.layers) {
-  //  document.layers.doc_time.document.write(date_time);
-  //  document.layers.doc_time.document.close();
-  // }
-  // else document.getElementById("doc_time").innerHTML = date_time;
-  //  setTimeout("clock()", 1000);
-//   };
-
 /////////////////////////////////////////////////// scroll Up and hide
 let scrollUp = document.getElementById('toTop');
 scrollUp.onclick = () => {
@@ -115,7 +87,6 @@ moc.onmouseover = () => {
 let toUs = () => {
   let aboutUs = document.getElementById('aboutUs');
   event.preventDefault();
-  //this.style.color = 'red';
   aboutUs.scrollIntoView({block: "center", behavior: "smooth"});
 }
 
@@ -148,36 +119,9 @@ let toContact = () => {
 let mobileMenu = document.getElementById('menu-icon');
 
 
-// mobileMenu.onclick = () => {
-//   //alert('!231');
-//   let myNavMenu = document.querySelector('nav');
-//       myNavMenu.style.display = 'flex';
-//    let navMenu = document.querySelector('.menu');
-//       navMenu.classList.add('menu-mobile');
-
-//     //   if ( navMenu.classList.contains('menu-mobile') == true) {
-//     //     alert('opend')
-//     //     myNavMenu.style.display = 'none';
-//     //   }
-//     //  //nav.classList.add('menu-test')
-
-//     let mobileMenuClosed = () => {
-//       if ( navMenu.classList.contains('menu-mobile') == true) {
-//         //alert('opend')
-//         myNavMenu.style.display = 'none';
-//       }
-//      //nav.classList.add('menu-test')
-//     }
-//     setTimeout(mobileMenuClosed, 10000);
-// };
-
-
-
 mobileMenu.onclick = () => {
   let mobileMenuHide = document.getElementById('nav');
-    //alert('!');
-     // mobileMenuHide.style.display = 'flex';
-      //mobileMenuHide.style.display = (mobileMenuHide.style.display == 'flex') ? 'flex' : 'none'
+   
       if (mobileMenuHide.style.display == 'none') {
         mobileMenuHide.style.display = 'flex'
       } else {
@@ -190,41 +134,13 @@ let search = document.getElementById('search');
     
 search.onclick = () => {
     
-  
-    alert('search');
     let parseBox = document.getElementById('parseBox');
         parseBox.innerHTML = '<input type="text">';
   
 
   }
 
-  let searchM = document.getElementById('searchM');
-    
-searchM.onclick = () => {
-    
-  
-    alert('search');
-    let parseBoxM = document.getElementById('parseBoxM');
-        parseBoxM.innerHTML = '<input type="text">';
-  
-
-  }
-
-
-
-// mobileMenuHide.onclick = () => {
-//   //alert('!231');
-//   let myNavMenu = document.querySelector('nav');
-//       myNavMenu.style.display = 'none';
-//   //  let navMenu = document.querySelector('.menu');
-//   //     navMenu.classList.add('menu-mobile');
-//      //nav.classList.add('menu-test')
-// };
-
-
-
-
-
+ 
 
 
 let months = ['January','February','March','April','May','June','July',
@@ -239,7 +155,3 @@ for (let i = 0; i <= spanDate.length; i++) {
 }
 document.getElementsByClassName ("spanDate").innerHTML = months[tomorrow.getMonth()] + " " + tomorrow.getDate()+ ", " + tomorrow.getFullYear()
   
-/////////////menu scroll start
-
-
-/////////////menu scroll end

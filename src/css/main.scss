@@ -1,5 +1,6 @@
 @import './font.scss';
 @import './mixins.scss';
+@import 'media.scss';
 
 body {
 	margin: 0;
@@ -237,6 +238,7 @@ li {
 }
 
 .portfolio__img {
+	max-width: 100%;
 	padding-bottom: 28px;
 }
 
@@ -250,6 +252,7 @@ li {
 
 	.pricelist {
 		background: #ffffff;
+		margin-bottom: 20px;
 
 		&:hover {
 			transition: 0.5s;
@@ -364,20 +367,10 @@ li {
 		
 }
 
-//  .myItem {
-// 	//display: none;
-// 	float: left;
-// 	margin: 0 auto;
-// 		&:active {
-// 			display: flex;
-// 			justify-content: flex-start;
-// 			margin: 0 auto;
-// 		}
-//  }
+
 
 .blog__img {
 	max-width: 100%;
-	// max-width: 550px;
 	margin-bottom: 5px;
 	object-fit: cover;
 }
@@ -398,6 +391,10 @@ li {
 	order: 1;
 }
 
+.blog {
+	margin-top: 10px;
+}
+
 .blog-item {
     text-align: left;
     margin: 60px 0 10px 20px;
@@ -411,15 +408,10 @@ li {
 
 .blog__info {
 	
-	i {
-		margin-right: 15px;
-		color: red;
-	}
 	span {
 		font-size: 17px;
 		font-family: 'Open Sans Semibold';
 		margin-right: 35px;
-		color: red;
 		margin-bottom: 20px;
 	}
 	p {
@@ -503,7 +495,9 @@ li {
    outline: none;
 }
 
-
+.footer input, .footer textarea {
+	margin-bottom: 10px;
+}
 
 // .footer button {
 //    font-size: 20px;
@@ -582,7 +576,7 @@ li {
 		text-decoration: none;
 	}	
 }
- @import 'media.scss'
+
 
 
 
